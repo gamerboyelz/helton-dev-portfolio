@@ -1,0 +1,27 @@
+.App{
+    display: flex;
+    justify-content: center;
+}
+.container-NavBar{
+    display: flex;
+    width: 1024px;
+    justify-content: space-between;
+    
+    .container-NavBar-icons{
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+
+        .gitLab{
+            width: 21px;
+            height: 21px;
+            padding-top: 2px;
+        }
+
+    }
+    .container-NavBar-Links{
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+    }
+}

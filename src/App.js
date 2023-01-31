@@ -1,6 +1,9 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import gitlab_icon from './assets/gitlab-icon.png';
+import "./App.styles.scss"
+
 
 const NavBar = () => {
   return (
@@ -9,21 +12,22 @@ const NavBar = () => {
         <LinkedInIcon/>
         <GitHubIcon/>
         <WhatsAppIcon/>
-
+        <img className='gitLab' src={gitlab_icon} alt=""/>
       </div>
+
       <div className="container-NavBar-Links">
-        <h1>
+        <div>
           SUMMARY
-        </h1>
-        <h1>
+        </div>
+        <div>
           WORK
-        </h1>
-        <h1>
+        </div>
+        <div>
           SKILLS
-        </h1>
-        <h1>
+        </div>
+        <div>
           PROJECT
-        </h1>
+        </div>
       </div>
     </div>
   );
@@ -33,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      Hello
+     
     </div>
   );
 }
