@@ -35,8 +35,12 @@
     padding-top: 50px;
 
     .btn-HeroSection{
-        padding: 20px;
+        padding: 20px 30px;
+        background-color: rgba(255, 255, 255, 0);
         color: rgba(0, 0, 0, 0.626);
+        font-size: 18px;
+        border-color: rgba(0, 0, 0, 0.626) ;
+        border-radius: 11px;
     }
     
     #heroSectionImage{
