@@ -1,11 +1,15 @@
 .App{
-    display: flex;
-    justify-content: center;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
 .container-NavBar{
     display: flex;
     width: 1024px;
     justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
     
     .container-NavBar-icons{
         display: flex;
@@ -25,3 +29,29 @@
         justify-content: space-between;
     }
 }
+.container-Hero-Section{
+    display: flex;
+    width: 1024px;
+    padding-top: 50px;
+
+    .btn-HeroSection{
+        padding: 20px;
+        color: rgba(0, 0, 0, 0.626);
+    }
+    
+    #heroSectionImage{
+        width: 600px; ;
+
+    }
+   
+}
+
+.horizontalRuleContainer{
+    width: 1024px;
+    padding: 20px 0px 20px 0px;
+
+    .horizontalRule{
+        width: 800px;
+    }    
+}
+
