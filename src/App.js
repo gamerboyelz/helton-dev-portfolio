@@ -40,7 +40,7 @@ const HeroSection = ()=> {
     <div className="container-Hero-Section">
       <div>
         <h1>Hi, I'm Helton</h1>
-        <p>A BSC. Information Communication and Technology Graduate with a Major in Software Engineer. Lets work together on your projects</p> <br />
+        <p>A BSC. Information Communication and Technology Graduate with a Major in Software Engineer. Lets work together on your projects.</p> <br />
         <p>Thid website was create with REACT.</p><br />
         <button className='btn-HeroSection'>HIRE ME</button>
       </div>
