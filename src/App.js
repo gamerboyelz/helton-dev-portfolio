@@ -39,9 +39,9 @@ const HeroSection = ()=> {
   return(
     <div className="container-Hero-Section">
       <div>
-        <h1>Heading</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatem incidunt quaerat vero animi voluptatibus quis, distinctio perferendis et porro assumenda pariatur fugiat? Deleniti, totam? Labore sequi officiis aperiam ut.</p> <br />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum saepe repellendus voluptatibus quis totam. Cum dolore, dolor ?</p><br />
+        <h1>Hi, I'm Helton</h1>
+        <p>A BSC. Information Communication and Technology Graduate with a Major in Software Engineer. Lets work together on your projects</p> <br />
+        <p>Thid website was create with REACT.</p><br />
         <button className='btn-HeroSection'>HIRE ME</button>
       </div>
       <div><img src={heroImage} id='heroSectionImage' alt="" /></div>
