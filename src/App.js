@@ -34,9 +34,14 @@ const HeroSection = () => {
         <p>
           A BSC. Information Communication and Technology Graduate with a Major
           in Software Engineer. Lets work together on your projects.
-        </p>{" "}
+        </p>
         <br />
-        <p>Thid website was create with REACT.</p>
+        <p>
+          Thid website was create with REACT. <br /> <br />
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto,
+          odio ut cumque voluptatem at sint nemo porro? Perspiciatis laudantium
+          deserunt quae iste non? Corrupti iusto iure iste velit vel ex.
+        </p>
         <br />
         <button className="btn-HeroSection">HIRE ME</button>
       </div>
@@ -54,34 +59,32 @@ const HorizontalRule = () => {
     </div>
   );
 };
-// here
+// working on body component here
 const MainDetailList = () => {
   const detailListInfo = [
     {
       id: 1,
       heading: "Summary",
       informationA: "Something about  Summary",
-      informationB: "Something about  Summary"
+      informationB: "Something about  Summary",
     },
     {
       id: 2,
       heading: "Work",
       informationA: "Something bout Work experience",
-      informationB: "Something bout Work experience"
+      informationB: "Something bout Work experience",
     },
     {
       id: 3,
       heading: "Skills",
       informationA: "Something bout Work experience",
-      informationB: "Something bout Work experience"
-
+      informationB: "Something bout Work experience",
     },
     {
       id: 4,
       heading: "Projects",
       informationA: "Something bout Work experience",
-      informationB: "Something bout Work experience"
-
+      informationB: "Something bout Work experience",
     },
   ];
 
