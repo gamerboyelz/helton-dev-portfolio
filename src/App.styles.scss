@@ -59,3 +59,21 @@
     }    
 }
 
+.MainDetailListContainerA{
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    align-items: center;
+
+    .MainDetailListContainer{
+        width: 600px;
+    
+        .MainDetailListContainerElements{
+            width: 450px;
+            margin-right: auto;
+            margin-left: auto;  
+        }
+    }
+}
+
+
