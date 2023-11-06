@@ -21,6 +21,7 @@ const NavBar = () => {
         <div>WORK</div>
         <div>SKILLS</div>
         <div>PROJECT</div>
+        <div>BLOG</div>
       </div>
     </div>
   );
@@ -37,10 +38,8 @@ const HeroSection = () => {
         </p>
         <br />
         <p>
-          Thid website was create with REACT. <br /> <br />
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto,
-          odio ut cumque voluptatem at sint nemo porro? Perspiciatis laudantium
-          deserunt quae iste non? Corrupti iusto iure iste velit vel ex.
+          <b>This website was created with the REACT JavaScript FrontEnd frame work.</b> <br /> <br />
+          Use the social media icons above to visit my LinkedIn profile, Git Hub and GitLab page and to contact me via WhatsApp if required. <br /><br /> Use the navigation link to the right of the social media icons to quickly navigate to the required section of the page.
         </p>
         <br />
         <button className="btn-HeroSection">HIRE ME</button>
@@ -106,6 +105,16 @@ const MainDetailList = () => {
   );
 };
 
+//creating footer functional component
+const Footer = () => {
+  return(
+    <div className="footerContainer">
+      <div className="footerContainerItem1"><h1>HELTON ELLISON</h1></div>
+      <div className="footerContainerItem2"><p>Email Address: heltonellison69@gmail.com <br /> <br /> Contact: (876) 807-7228 </p></div>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="App">
@@ -113,6 +122,7 @@ function App() {
       <HeroSection />
       <HorizontalRule />
       <MainDetailList />
+      <Footer />
     </div>
   );
 }
