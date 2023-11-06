@@ -80,6 +80,19 @@
     justify-content: space-between;
     align-items: center;
     padding: 50px 0px 50px 0px;
+
+    .footerContainerItem2 div{
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .gitLab{
+        width: 21px;
+        height: 21px;
+        padding-top: 2px;
+    }
    
 }
 

@@ -110,7 +110,15 @@ const Footer = () => {
   return(
     <div className="footerContainer">
       <div className="footerContainerItem1"><h1>HELTON ELLISON</h1></div>
-      <div className="footerContainerItem2"><p>Email Address: heltonellison69@gmail.com <br /> <br /> Contact: (876) 807-7228 </p></div>
+      <div className="footerContainerItem2">
+        <p>Email Address: heltonellison69@gmail.com <br /> <br /> Contact: (876) 807-7228 </p>
+        <div>
+        <LinkedInIcon />
+        <GitHubIcon />
+        <WhatsAppIcon />
+        <img className="gitLab" src={gitlab_icon} alt="" />
+        </div>
+      </div>
     </div>
   )
 }
