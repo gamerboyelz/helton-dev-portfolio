@@ -2,25 +2,25 @@
 const MainDetailList = () => {
     const detailListInfo = [
       {
-        id: 1,
+        id: 'summary',
         heading: "Summary",
         informationA: "Something about  Summary Something about",
         informationB: "Something about  Summary"
       },
       {
-        id: 2,
+        id: 'work',
         heading: "Work",
         informationA: "Something about  Summary Something about",
         informationB: "Something bout Work experience"
       },
       {
-        id: 3,
+        id: 'skills',
         heading: "Skills",
         informationA: "Something about  Summary Something about",
         informationB: "Something bout Work experience"
       },
       {
-        id: 4,
+        id: 'projects',
         heading: "Projects",
         informationA: "Something about  Summary Something about",
         informationB: "Something bout Work experience"
@@ -33,7 +33,7 @@ const MainDetailList = () => {
           return (
             <div key={detailListInfoObjects.id} className="MainDetailListContainer">
               <div className="MainDetailListContainerElements">
-                <h1 >{detailListInfoObjects.heading}</h1>
+                <h1 id={detailListInfoObjects.id} >{detailListInfoObjects.heading}</h1>
                 <p >{detailListInfoObjects.informationA}</p>
                 <p >{detailListInfoObjects.informationB}</p>
               </div>
