@@ -14,11 +14,11 @@ const NavBar = () => {
         </div>
   
         <div className="container-NavBar-Links">
-          <div> <a href="#summary">SUMMARY</a> </div>
-          <div> <a href="#work">WORK</a> </div>
-          <div> <a href="#skills">SKILLS</a> </div>
-          <div><a href="#projects">PROJECT</a></div>
-          <div><a href="#blogs">BLOG</a></div>
+          <div> SUMMARY </div>
+          <div> WORK </div>
+          <div> SKILLS </div>
+          <div>PROJECT</div>
+          <div>BLOG</div>
         </div>
       </div>
     );

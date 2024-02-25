@@ -2,25 +2,25 @@
 const MainDetailList = () => {
     const detailListInfo = [
       {
-        id: 'summary',
+        id: 1,
         heading: "Summary",
         informationA: "Something about  Summary Something about",
         informationB: "Something about  Summary"
       },
       {
-        id: 'work',
+        id: 2,
         heading: "Work",
         informationA: "Something about  Summary Something about",
         informationB: "Something bout Work experience"
       },
       {
-        id: 'skills',
-        heading: "Skills",
+        id: 3,
+        heading:'Skills',
         informationA: "Something about  Summary Something about",
         informationB: "Something bout Work experience"
       },
       {
-        id: 'projects',
+        id: 5,
         heading: "Projects",
         informationA: "Something about  Summary Something about",
         informationB: "Something bout Work experience"
