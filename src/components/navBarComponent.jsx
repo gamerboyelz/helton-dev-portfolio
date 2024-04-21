@@ -6,10 +6,16 @@ import gitlab_icon from "../assets/gitlab-icon.png";
 const NavBar = () => {
 
   const handleClickVisitLinkedIn = ()=>{
-      window.location.href ='https://www.linkedin.com/in/helton-ellison-81497b143'
+      window.open('https://www.linkedin.com/in/helton-ellison-81497b143')
   }
   const handleClickVisitGitHUb = ()=> {
-    window.location.href = 'https://github.com/gamerboyelz'
+    window.open('https://github.com/gamerboyelz')
+  }
+  const handleClickVisitGitLab = ()=>{
+    window.open("https://gitlab.com/_Eskimo")
+  }
+  const handleClickVisitWhatsApp = ()=>{
+    window.open("https://wa.me/18768077228")
   }
 
     return (
@@ -17,8 +23,8 @@ const NavBar = () => {
         <div className="container-NavBar-icons">
           <LinkedInIcon onClick = {handleClickVisitLinkedIn} />
           <GitHubIcon onClick = {handleClickVisitGitHUb} />
-          <WhatsAppIcon />
-          <img className="gitLab" src={gitlab_icon} alt="" />
+          <WhatsAppIcon onClick ={handleClickVisitWhatsApp} />
+          <img onClick={handleClickVisitGitLab} className="gitLab" src={gitlab_icon} alt="" />
         </div>
   
         <div className="container-NavBar-Links">
