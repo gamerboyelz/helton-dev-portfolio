@@ -43,6 +43,15 @@
         border-color: rgba(0, 0, 0, 0.626) ;
         border-radius: 11px;
     }
+    .btn-HeroSection:hover{
+        background-color:rgb(58, 152, 183);
+        transition: 0.7s;
+        cursor: pointer;
+    }
+    .btn-HeroSection:active{
+        background-color:rgb(114, 213, 246);
+      
+    }
     
     #heroSectionImage{
         width: 600px; ;

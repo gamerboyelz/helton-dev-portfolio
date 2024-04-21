@@ -4,26 +4,27 @@ const MainDetailList = () => {
       {
         id: 1,
         heading: "Summary",
-        informationA: "Something about  Summary Something about",
-        informationB: "Something about  Summary"
+        informationA: "Welcome to my Website Developer portfolio; it is an ongoing project. ",
+        informationB: "Updates will be made frequently to include a blog page and live projects that I have worked on"
       },
       {
         id: 2,
         heading: "Work",
-        informationA: "Something about  Summary Something about",
-        informationB: "Something bout Work experience"
+        informationA: "A link or button to download my resume will be here",
+        informationB: "Please visit my linkedIn profile to see my work history for now",
+        informationC: "Click the linkedIn icon  in the website navigation menu"
       },
       {
         id: 3,
         heading:'Skills',
-        informationA: "Something about  Summary Something about",
-        informationB: "Something bout Work experience"
+        informationA: "JavaScript, HTML, CSS, REACT, Node.js, SQL,  ",
+        informationB: "icons of Skills will be placed here"
       },
       {
         id: 5,
         heading: "Projects",
-        informationA: "Something about  Summary Something about",
-        informationB: "Something bout Work experience"
+        informationA: "A list of links will be posted with my live projects",
+        informationB: "Please visit my git hub profile with the links provided in the footer or header of this website"
       },
     ];
   
@@ -36,6 +37,7 @@ const MainDetailList = () => {
                 <h1 id={detailListInfoObjects.id} >{detailListInfoObjects.heading}</h1>
                 <p >{detailListInfoObjects.informationA}</p>
                 <p >{detailListInfoObjects.informationB}</p>
+                <p >{detailListInfoObjects.informationC}</p>
               </div>
               <hr />
             </div>
