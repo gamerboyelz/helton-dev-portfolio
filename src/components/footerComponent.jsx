@@ -1,7 +1,5 @@
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import gitlab_icon from "../assets/gitlab-icon.png";
+
+import SocialMediaIcons from "./socialMediaIconsComponents";
 
 //creating footer functional component
 const Footer = () => {
@@ -11,10 +9,7 @@ const Footer = () => {
         <div className="footerContainerItem2">
           <p>Email Address: heltonellison69@gmail.com <br /> <br /> Contact: (876) 807-7228 </p>
           <div>
-          <LinkedInIcon />
-          <GitHubIcon />
-          <WhatsAppIcon />
-          <img className="gitLab" src={gitlab_icon} alt="" />
+          <SocialMediaIcons/>
           </div>
         </div>
       </div>
