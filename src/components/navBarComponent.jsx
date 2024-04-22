@@ -8,7 +8,6 @@ const NavBar = () => {
       <div className="container-NavBar">
         <div>
         <SocialMediaIcons />
-
         </div>
         <div className="container-NavBar-Links">
           <div> SUMMARY </div>
