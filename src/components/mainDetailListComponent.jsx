@@ -1,5 +1,9 @@
 // working on body component here
+import SkillsIconComponent from "./skillsIconComponent";
+
+const skillsIconComponent = SkillsIconComponent
 const MainDetailList = () => {
+
     const detailListInfo = [
       {
         id: 1,
@@ -17,11 +21,12 @@ const MainDetailList = () => {
       {
         id: 3,
         heading:'Skills',
-        informationA: "JavaScript, HTML, CSS, REACT, Node.js, SQL,  ",
-        informationB: "icons of Skills will be placed here"
+        informationA: "JavaScript, HTML, CSS, REACT, Node.js, SQL  ",
+        informationB: skillsIconComponent() /* The component could also be placed here like this --> <SkillsIconComponent />*/
       },
+
       {
-        id: 5,
+        id: 4,
         heading: "Projects",
         informationA: "A list of links will be posted with my live projects",
         informationB: "Please visit my git hub profile with the links provided in the footer or header of this website"

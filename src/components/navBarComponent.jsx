@@ -1,7 +1,10 @@
 
 import SocialMediaIcons from "./socialMediaIconsComponents";
+import scrollToSection from "../utilities/smootheScrollUtility";
 
 const NavBar = () => {
+
+  const smootheScrollToSection = scrollToSection
 
 
     return (
@@ -10,10 +13,10 @@ const NavBar = () => {
         <SocialMediaIcons />
         </div>
         <div className="container-NavBar-Links">
-          <div> SUMMARY </div>
-          <div> WORK </div>
-          <div> SKILLS </div>
-          <div>PROJECT</div>
+          <div onClick={ ()=>{smootheScrollToSection('1') }}> SUMMARY </div>
+          <div onClick={ ()=>{smootheScrollToSection('2')} } > WORK </div>
+          <div onClick={ ()=>{smootheScrollToSection('3')}}> SKILLS </div>
+          <div onClick={ ()=>{smootheScrollToSection('4')} }>PROJECT</div>
           <div>BLOG</div>
         </div>
       </div>

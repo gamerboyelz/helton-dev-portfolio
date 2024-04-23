@@ -85,6 +85,16 @@
         }
     }
 }
+.skillsIconComponentIconContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+    .devIcons{
+        height: 1px;
+    }
+}
+
 .footerContainer{
     display: flex;
     justify-content: space-between;
