@@ -5,19 +5,24 @@ import { TiHtml5 } from "react-icons/ti";
 import { IoLogoSass } from "react-icons/io5";
 import { RiReactjsFill } from "react-icons/ri";
 import { FaCss3Alt } from "react-icons/fa";
-const SkillsIconComponent = ()=>{
+import { IconContext } from "react-icons";
 
+const SkillsIconComponent = ()=>{
+    
     return(
+        <IconContext.Provider value={{size: "2.5em" }}>
         <div className="skillsIconComponentIconContainer">
-            <h1 className="devIcons" ><DiJsBadge /></h1>
-           <h1 className="devIcons"><TiHtml5  /></h1>
-           <h1 className="devIcons"><FaCss3Alt  /></h1>
-           <h1 className="devIcons"><IoLogoSass  /></h1>
-           <h1 className="devIcons"><RiReactjsFill  /></h1>
-           <h1 className="devIcons"><DiNodejsSmall  /></h1>
-           <h1 className="devIcons"><GrMysql /></h1>
+            <div className="devIcons" ><DiJsBadge /></div>
+            <div className="devIcons"><TiHtml5  /></div>
+            <div className="devIcons"><FaCss3Alt  /></div>
+            <div className="devIcons"><IoLogoSass  /></div>
+            <div className="devIcons"><RiReactjsFill  /></div>
+            <div className="devIcons"><DiNodejsSmall  /></div>
+            <div className="devIcons"><GrMysql /></div>
         </div>
+        </IconContext.Provider>
     )
+    
 }
 
 export default SkillsIconComponent;

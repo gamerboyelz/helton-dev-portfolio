@@ -23,11 +23,19 @@
         }
 
     }
+    .container-NavBar-icons:hover{
+        transition: 0.7s;
+        cursor: pointer;
+
+    }
     .container-NavBar-Links{
         display: flex;
         width: 350px;
-        justify-content: space-between;
-         
+        justify-content: space-between;   
+    }
+    .container-NavBar-Links:hover{
+        transition: 0.7s;
+        cursor: pointer;
     }
 }
 .container-Hero-Section{
@@ -89,10 +97,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
-
-    .devIcons{
-        height: 1px;
-    }
+    padding-top: 30px;
 }
 
 .footerContainer{
@@ -112,6 +117,10 @@
         width: 21px;
         height: 21px;
         padding-top: 2px;
+    }
+    .footerContainerItem2 div:hover{
+        transition: 0.7s;
+        cursor: pointer;
     }
    
 }

@@ -16,7 +16,11 @@ const HeroSection = () => {
         
           </p>
           <br />
-          <button className="btn-HeroSection">HIRE ME</button>
+
+          <button className="btn-HeroSection" onClick={()=>{
+            console.log("call to action button was clicked")
+          }} >HIRE ME</button>
+
         </div>
         <div>
           <img src={heroImage} id="heroSectionImage" alt="" />

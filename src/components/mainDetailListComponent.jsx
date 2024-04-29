@@ -39,10 +39,10 @@ const MainDetailList = () => {
           return (
             <div key={detailListInfoObjects.id} className="MainDetailListContainer">
               <div className="MainDetailListContainerElements">
-                <h1 id={detailListInfoObjects.id} >{detailListInfoObjects.heading}</h1>
-                <p >{detailListInfoObjects.informationA}</p>
-                <p >{detailListInfoObjects.informationB}</p>
-                <p >{detailListInfoObjects.informationC}</p>
+                <h1>{detailListInfoObjects.heading}</h1>
+                <div>{detailListInfoObjects.informationA}</div>
+                <div>{detailListInfoObjects.informationB}</div>
+                <div>{detailListInfoObjects.informationC}</div>
               </div>
               <hr />
             </div>
