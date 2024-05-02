@@ -1,11 +1,12 @@
 import heroImage from "../assets/heroImage.png";
+import resume from "../assets/CV.pdf";
 
 
 const HeroSection = () => {
     return (
       <div className="container-Hero-Section">
         <div>
-          <h1>Hi, I'm Helton</h1>
+          <h1 className="centerHeadingElement">Hi, I'm Helton</h1>
           <p>
             A BSC. Information Communication and Technology Graduate with a Major
             in Software Engineer. Lets work together on your projects.
@@ -17,9 +18,13 @@ const HeroSection = () => {
           </p>
           <br />
 
+          <div className="buttonContainer">
+            {/* work on Hire Me button below */}
           <button className="btn-HeroSection" onClick={()=>{
             console.log("call to action button was clicked")
           }} >HIRE ME</button>
+          <a className="btn-HeroSection" href={resume} download="Helton's Resume">Download CV</a> 
+          </div>
 
         </div>
         <div>

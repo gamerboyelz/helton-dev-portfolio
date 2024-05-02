@@ -43,24 +43,39 @@
     width: 1024px;
     padding-top: 50px;
 
-    .btn-HeroSection{
-        padding: 20px 30px;
-        background-color: black;
-        color: white;
-        font-size: 18px;
-        border-color: rgba(0, 0, 0, 0.626) ;
-        border-radius: 11px;
+    .centerHeadingElement{
+        display: flex;
+        justify-content: center;
     }
-    .btn-HeroSection:hover{
-        background-color:rgb(58, 152, 183);
-        transition: 0.7s;
-        cursor: pointer;
+
+    .buttonContainer{
+
+        display: flex;
+        justify-content: space-evenly;
+
+        .btn-HeroSection{
+            padding: 20px 30px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            border-radius: 11px;
+            border-width: 0px;
+            text-decoration: none;
+        }
+        .btn-HeroSection:hover{
+            background-color:rgb(58, 152, 183);
+            transition: 0.7s;
+            cursor: pointer;
+        }
+        .btn-HeroSection:active{
+            background-color:rgb(114, 213, 246);
+          
+        }
+        
+
     }
-    .btn-HeroSection:active{
-        background-color:rgb(114, 213, 246);
-      
-    }
-    
+
+  
     #heroSectionImage{
         width: 600px; ;
 
