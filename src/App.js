@@ -7,7 +7,7 @@ import "./App.styles.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div id="app" className="App">
       <NavBar />
       <HeroSection />
       <HorizontalRule />
