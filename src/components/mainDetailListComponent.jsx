@@ -38,7 +38,7 @@ const MainDetailList = () => {
         {detailListInfo.map((detailListInfoObjects) => {
           return (
             <div key={detailListInfoObjects.id} className="MainDetailListContainer">
-              <div className="MainDetailListContainerElements">
+              <div id={detailListInfoObjects.id}  className="MainDetailListContainerElements">
                 <h1>{detailListInfoObjects.heading}</h1>
                 <div>{detailListInfoObjects.informationA}</div>
                 <div>{detailListInfoObjects.informationB}</div>

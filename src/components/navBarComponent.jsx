@@ -1,4 +1,3 @@
-
 import SocialMediaIcons from "./socialMediaIconsComponents";
 import scrollToSection from "../utilities/smootheScrollUtility";
 
