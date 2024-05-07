@@ -1,11 +1,9 @@
 import heroImage from "../assets/heroImage.png";
 import resume from "../assets/CV.pdf";
+import FormPopUpModal from "./formPopUpModal";
 
 const HeroSection = () => {
 
-  const handleClickPopUpForm = ()=>{
-    console.log("hire button was clicked")
-  }
 
     return (
       <div className="container-Hero-Section">
@@ -24,7 +22,7 @@ const HeroSection = () => {
 
           <div className="buttonContainer">
             {/* work on Hire Me button below */}
-          <button className="btn-HeroSection" onClick={handleClickPopUpForm} >HIRE ME</button>
+            <FormPopUpModal/>
           <a className="btn-HeroSection" href={resume} download="Helton's Resume">Download CV</a> 
           </div>
 
