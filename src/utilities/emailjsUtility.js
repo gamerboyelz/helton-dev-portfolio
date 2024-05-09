@@ -9,3 +9,5 @@ const sendEmail = (email)=>{
         console.error(error);
       });
 }
+
+export default sendEmail;

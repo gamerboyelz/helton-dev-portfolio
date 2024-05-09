@@ -1,7 +1,6 @@
  import { useState } from 'react';
  import Modal from 'react-modal';
 
-
  const customStyles = {
     content: {
       top: '50%',
@@ -29,14 +28,31 @@ Modal.setAppElement(document.getElementById('root'));
       function afterOpenModal() {
         // references are now sync'd and can be accessed.
         subtitle.style.color = '#f00';
+
       }
     
       function closeModal() {
         setIsOpen(false);
       }
+
+      const [emailAddress, setEmailAddress] = useState("")
+      const [name, setName] = useState("")
+      const [message, setMessage] = useState("")
+      
+      const handleFormSubmit = (e)=>{
+        e.preventDefault()
+        const emailData = {
+          emailAddress: {emailAddress},
+          message: {message},
+          name: {name}
+        }
+        console.log("form submit")
+        console.log(emailData)
+        closeModal()
+      }
     
       return (
-        <div>
+        <div className='popUpModalContainer'>
             <button className="btn-HeroSection" onClick={handleClickopenModal} >HIRE ME</button>
           
           <Modal
@@ -47,15 +63,22 @@ Modal.setAppElement(document.getElementById('root'));
             contentLabel="Example Modal"
           >
             <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-            <button onClick={closeModal}>close</button>
-            <div>I am a modal</div>
-            <form>
-              <input />
-              <button>tab navigation</button>
-              <button>stays</button>
-              <button>inside</button>
-              <button>the modal</button>
+            
+            <form id='modalFormId'>
+              <input type="email" placeholder="Enter your email address." name='emailAddress' value={emailAddress} onChange={(event)=>{
+                setEmailAddress(event.target.value)
+              }} />
+              <input type="text" name='name' placeholder='Enter your name.' value={name} onChange={(event)=>{
+                setName(event.target.value)
+              }} />
+              <textarea name="message" id="message" cols="30" placeholder="Send me a message" value={message} onChange={(event)=>{
+                setMessage(event.target.value)
+              }}></textarea>
             </form>
+            <div className="modalButtonContainer">
+                <button className="modalBtn-HeroSection" onClick={closeModal}>cancel</button>
+                <button className="modalBtn-HeroSection" form="modalFormId" onClick={handleFormSubmit}  > Send </button>
+            </div>
           </Modal>
         </div>
       );
