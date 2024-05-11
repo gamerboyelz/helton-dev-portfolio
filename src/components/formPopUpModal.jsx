@@ -55,8 +55,8 @@ const FormPopUpModal = () => {
     //  method taken from emailjs to assit with sending emails below-----
     
     emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", emailData, {
-        publicKey: "YOUR_PUBLIC_KEY",
+      .send("service_08ncjdg", "template_qvr5sqc", emailData.message, {
+        publicKey: "bsyXAxXpfPAy4MewL",
       })
       .then(
         (response) => {
@@ -136,4 +136,18 @@ const FormPopUpModal = () => {
 };
 
 export default FormPopUpModal;
+
+/*emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  }; */
 
