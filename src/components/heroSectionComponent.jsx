@@ -11,7 +11,8 @@ const HeroSection = () => {
           <h1 className="centerHeadingElement">Hi, I'm Helton</h1>
           <p>
             A BSC. Information Communication and Technology Graduate with a Major
-            in Software Engineer. Lets work together on your projects.
+            in Software Engineer. <br />
+            Lets work together on your projects.
           </p>
           <br />
           <p>

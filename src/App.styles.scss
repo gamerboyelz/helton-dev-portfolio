@@ -185,6 +185,98 @@
     }
    
 }
+// responsive website desingn styles
+
+
+@media ( max-width: 713px  ){
+
+    html, body {
+        overflow-x: hidden;
+        
+    }
+   
+   }
+//    mobile phones
+   @media ( max-width: 431px  ){
+    html, body {
+        overflow-x: hidden;
+        // color: red;
+        display: flex;
+        justify-content: center;
+    }
+    .App{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+        width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+    .container-NavBar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .container-Hero-Section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 380px;
+
+        div p{ 
+            text-align: center; 
+        }
+
+        #heroSectionImage{
+            display: none;
+            // width: 400px;
+
+        }
+        .centerHeadingElement{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .horizontalRuleContainer{
+        width: 430px;
+        padding: 20px 0px 20px 0px;
+    
+        .horizontalRule{
+            width: 430px;
+        }    
+    }
+    
+    .MainDetailListContainerA{
+        display: flex;
+        flex-direction: column;
+        width:430px;
+        justify-content: center;
+    
+        .MainDetailListContainer{
+            width: 430px;
+            padding: 2em;
+        
+            .MainDetailListContainerElements{
+                width: 380px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+
+   }
 
 
 
