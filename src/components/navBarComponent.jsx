@@ -1,12 +1,10 @@
 import SocialMediaIcons from "./socialMediaIconsComponents";
 import scrollToSection from "../utilities/smootheScrollUtility";
-import { HiOutlineMenu } from "react-icons/hi";
-import { IconContext } from "react-icons";
+import HamBurgerMenu from "./hamburgerMenuComponent";
 
 const NavBar = () => {
 
   const smootheScrollToSection = scrollToSection
-
 
     return (
       <div className="container-NavBar">
@@ -20,9 +18,7 @@ const NavBar = () => {
           <div onClick={ ()=>{smootheScrollToSection('4')} }>PROJECT</div>
           <div>BLOG</div>
         </div>
-        <IconContext.Provider value={{size: "2.5em"}}>
-        <div className="mobileMenuIcon"><HiOutlineMenu/></div>
-        </IconContext.Provider>
+        <HamBurgerMenu />
       </div>
     );
   };
