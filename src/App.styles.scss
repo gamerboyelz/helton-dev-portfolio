@@ -37,9 +37,13 @@
         transition: 0.7s;
         cursor: pointer;
     }
-    .mobileMenuIcon{
+    .hamBurgerMenu{
         display: none;
     }
+    .menu {
+           
+        display: none;
+      }
 
 }
 .container-Hero-Section{
@@ -222,6 +226,9 @@
         display: flex;
         justify-content: space-around;
         width:100vw;
+        position: fixed;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         // background-color: red;
         .container-NavBar-icons{
             // background-color: red;
@@ -232,7 +239,33 @@
 
         .hamBurgerMenu{
             display: flex;
-        } 
+            color: rgb(34, 34, 34);
+            z-index: 1000;
+        }
+        .menu {
+           
+            position: fixed;
+            top: 0;
+            right: -430px;
+            width: 430px;
+            height: 100vh;
+            background-color: #33333369;
+            backdrop-filter: blur(10px);
+            transition: 0.4s;
+            padding-top: 60px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: flex-start;
+            justify-content: space-between;
+          }
+          
+          .menu.open {
+            // right: 0;
+            margin-right: 430px;
+          } 
         .container-NavBar-Links{
             display: none;  
         } 
@@ -243,6 +276,11 @@
         align-items: center;
         justify-content: center;
         width: 380px;
+        // padding-top: 25px;
+        div .centerHeadingElement{
+            padding: 50px;
+
+        }
 
         div p{ 
             text-align: center; 
