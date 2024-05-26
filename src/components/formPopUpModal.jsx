@@ -33,7 +33,15 @@ const FormPopUpModal = () => {
   }
 
   function closeModal() {
+    // function that clear form fields and close modal here.......
+    clearFormFields();
     setIsOpen(false);
+  }
+  // function to clear form fields when closed or send is clicked
+  function clearFormFields(){
+    setEmailAddress("")
+    setName("")
+    setMessage("")
   }
 
   const [emailAddress, setEmailAddress] = useState("");
