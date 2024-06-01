@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import emailjs from "@emailjs/browser";
+import "../App.styles.scss";
 
-const customStyles = {
+let customStyles = {
   content: {
     top: "50%",
     left: "50%",
@@ -10,8 +11,37 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
+    backgroundColor: 'whiteSmoke'
+  },
+  overlay: {
+    backgroundColor: '#222221c9'
   },
 };
+let customStylesMobile ={
+  content: {
+    height: "460px",
+    width: "300px",
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    overflowX: "hidden",
+    backgroundColor: 'whiteSmoke'
+   
+  },
+  
+  overlay: {
+    backgroundColor: '#222221c9'
+    // backgroundColor: 'red'
+  },
+
+}
+
+if ( window.matchMedia("( max-width: 431px )").matches  ) {
+  customStyles = customStylesMobile
+}
 
 /*very important   ----Please use `Modal.setAppElement(el)` or set `appElement={el}`. This is needed so screen readers don't see main content when modal is opened. It is not recommended, but you can opt-out by setting `ariaHideApp={false}`.*/
 
@@ -20,7 +50,7 @@ Modal.setAppElement(document.getElementById("root"));
 // const sendEmail = new emailjs
 
 const FormPopUpModal = () => {
-  let subtitle;
+
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function handleClickopenModal() {
@@ -29,7 +59,7 @@ const FormPopUpModal = () => {
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00";
+
   }
 
   function closeModal() {
@@ -91,9 +121,7 @@ const FormPopUpModal = () => {
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="Example Modal"
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
 
         <form id="modalFormId">
           <input
@@ -134,8 +162,7 @@ const FormPopUpModal = () => {
             form="modalFormId"
             onClick={handleFormSubmit}
           >
-            {" "}
-            Send{" "}
+            Send
           </button>
         </div>
       </Modal>

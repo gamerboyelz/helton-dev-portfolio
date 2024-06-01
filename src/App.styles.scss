@@ -193,9 +193,8 @@
     }
    
 }
-// responsive website desingn styles
 
-
+/*----------------Tablet responsive css---------------- */  
 @media ( max-width: 713px  ){
 
     html, body {
@@ -303,6 +302,28 @@
         .horizontalRule{
             width: 430px;
         }    
+    }
+
+    #modalFormId{
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        padding: 20px;
+        input {
+       
+            margin: 10px 0px 10px 0px;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.133);
+        }
+        input:focus, textarea:focus{
+            outline: none;
+        }
+        textarea{
+            margin: 10px 0px 10px 0px;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.133);
+            height: 150px;
+        }
     }
     
     .MainDetailListContainerA{
