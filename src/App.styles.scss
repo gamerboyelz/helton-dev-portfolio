@@ -306,11 +306,11 @@
 
     #modalFormId{
         display: flex;
+        justify-content: center;
         flex-direction: column;
         width: 280px;
         padding: 20px;
         input {
-       
             margin: 10px 0px 10px 0px;
             padding: 15px;
             border: 1px solid rgba(0, 0, 0, 0.133);
