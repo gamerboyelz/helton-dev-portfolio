@@ -80,11 +80,11 @@ const FormPopUpModal = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const emailData = {
-      from: { emailAddress },
-      emailAddress: { emailAddress },
-      message: { message },
-      name: { name },
+    let emailData = {
+      from_emailAddress: emailAddress,
+      name: name,
+      message: message,
+      
     };
     console.log("form submit");
     console.log(emailData);
@@ -92,8 +92,7 @@ const FormPopUpModal = () => {
 
     //  method taken from emailjs to assit with sending emails below-----
     
-    emailjs
-      .send("service_08ncjdg", "template_qvr5sqc", emailData.message, {
+    emailjs.send("service_08ncjdg", "template_qvr5sqc", emailData, {
         publicKey: "bsyXAxXpfPAy4MewL",
       })
       .then(
