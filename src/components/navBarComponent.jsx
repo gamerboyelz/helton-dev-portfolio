@@ -16,7 +16,6 @@ const NavBar = () => {
           <div onClick={ ()=>{smootheScrollToSection('2')} } > WORK </div>
           <div onClick={ ()=>{smootheScrollToSection('3')}}> SKILLS </div>
           <div onClick={ ()=>{smootheScrollToSection('4')} }>PROJECT</div>
-          <div>BLOG</div>
         </div>
         <HamBurgerMenu />
       </div>
