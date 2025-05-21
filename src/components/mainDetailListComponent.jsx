@@ -29,7 +29,8 @@ const MainDetailList = () => {
         id: 4,
         heading: "Projects",
         informationA: "A list of links will be posted with my live projects",
-        informationB: "Please visit my git hub profile with the links provided in the footer or header of this website"
+        informationB: "Please visit my git hub profile with the links provided in the footer or header of this website",
+        informationC: "project 1: https://memorynotes.netlify.app/"
       },
     ];
   
