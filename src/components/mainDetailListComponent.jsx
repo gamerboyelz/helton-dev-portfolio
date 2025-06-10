@@ -13,10 +13,10 @@ const MainDetailList = () => {
       },
       {
         id: 2,
-        heading: "Work",
-        informationA: "A link or button to download my resume will be here",
-        informationB: "Please visit my linkedIn profile to see my work history for now",
-        informationC: "Click the linkedIn icon  in the website navigation menu"
+        heading: "Work History",
+        informationA: "Please use the Download CV button to review a copy of my CV/Resume ",
+        informationB: "visit my linkedIn profile to learn more by",
+        informationC: "clicking the linkedIn icon  in the website navigation menu"
       },
       {
         id: 3,
@@ -30,7 +30,7 @@ const MainDetailList = () => {
         heading: "Projects",
         informationA: "A list of links will be posted with my live projects",
         informationB: "Please visit my git hub profile with the links provided in the footer or header of this website",
-        informationC: "project 1: https://memorynotes.netlify.app/"
+        informationC: "Memory Notes App : https://memorynotes.netlify.app/"
       },
     ];
   
