@@ -3,6 +3,9 @@ import SkillsIconComponent from "./skillsIconComponent";
 
 const skillsIconComponent = SkillsIconComponent
 const MainDetailList = () => {
+     const handleClickVisitProject1 = ()=>{
+        window.open('https://www.linkedin.com/in/helton-ellison-softwareengineer/')
+    }
 
     const detailListInfo = [
       {
@@ -43,7 +46,7 @@ const MainDetailList = () => {
                 <h1>{detailListInfoObjects.heading}</h1>
                 <div>{detailListInfoObjects.informationA}</div>
                 <div>{detailListInfoObjects.informationB}</div>
-                <div>{detailListInfoObjects.informationC}</div>
+                <div>{detailListInfoObjects.informationC} onClick = {handleClickVisitProject1} </div>
               </div>
               <hr />
             </div>
