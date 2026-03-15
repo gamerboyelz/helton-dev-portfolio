@@ -3,9 +3,11 @@ import SkillsIconComponent from "./skillsIconComponent";
 
 const skillsIconComponent = SkillsIconComponent
 const MainDetailList = () => {
-     const handleClickVisitProject1 = ()=>{
-        window.open('https://www.linkedin.com/in/helton-ellison-softwareengineer/')
+   // function to handle navigation to different website  
+  const handleClickVisitProject1 = ()=>{
+        window.open('https://memorynotes.netlify.app/')
     }
+//arrray of objects for display
 
     const detailListInfo = [
       {
@@ -46,7 +48,8 @@ const MainDetailList = () => {
                 <h1>{detailListInfoObjects.heading}</h1>
                 <div>{detailListInfoObjects.informationA}</div>
                 <div>{detailListInfoObjects.informationB}</div>
-                <div onClick = {handleClickVisitProject1} >{detailListInfoObjects.informationC} </div>
+                <div onClick = {handleClickVisitProject1} className ="Project1" >{detailListInfoObjects.informationC} </div>
+                
               </div>
               <hr />
             </div>

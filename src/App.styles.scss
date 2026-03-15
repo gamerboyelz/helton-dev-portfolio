@@ -112,7 +112,11 @@
         .MainDetailListContainerElements{
             width: 450px;
             margin-right: auto;
-            margin-left: auto;  
+            margin-left: auto; 
+        }
+        .MainDetailListContainerElements.Project1:hover{
+            transition: 0.7s;
+            cursor: pointer; 
         }
     }
 }
