@@ -6,7 +6,7 @@ import gitlab_icon from "../assets/gitlab-icon.png";
 const SocialMediaIcons = ()=>{
 
     const handleClickVisitLinkedIn = ()=>{
-        window.open('https://www.linkedin.com/in/helton-ellison-81497b143')
+        window.open('https://www.linkedin.com/in/helton-ellison-softwareengineer/')
     }
     const handleClickVisitGitHUb = ()=> {
       window.open('https://github.com/gamerboyelz')
