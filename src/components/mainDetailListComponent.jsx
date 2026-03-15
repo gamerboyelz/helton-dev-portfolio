@@ -46,7 +46,7 @@ const MainDetailList = () => {
                 <h1>{detailListInfoObjects.heading}</h1>
                 <div>{detailListInfoObjects.informationA}</div>
                 <div>{detailListInfoObjects.informationB}</div>
-                <div>{detailListInfoObjects.informationC} onClick = {handleClickVisitProject1} </div>
+                <div onClick = {handleClickVisitProject1} >{detailListInfoObjects.informationC} </div>
               </div>
               <hr />
             </div>
