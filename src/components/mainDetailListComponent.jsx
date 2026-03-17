@@ -3,10 +3,14 @@ import SkillsIconComponent from "./skillsIconComponent";
 
 const skillsIconComponent = SkillsIconComponent
 const MainDetailList = () => {
-   // function to handle navigation to different website  
+   // functions to handle navigation to different website  
   const handleClickVisitProject1 = ()=>{
         window.open('https://memorynotes.netlify.app/')
     }
+      const handleClickVisitProject2 = ()=>{
+        window.open('https://jleeintimateescape.netlify.app/')
+    }
+    
 //arrray of objects for display
 
     const detailListInfo = [
@@ -35,7 +39,9 @@ const MainDetailList = () => {
         heading: "Projects",
         informationA: "A list of links will be posted with my live projects",
         informationB: "Please visit my git hub profile with the links provided in the footer or header of this website",
-        informationC: "Memory Notes App : https://memorynotes.netlify.app/"
+        informationC: "Memory Notes App : https://memorynotes.netlify.app/",
+        informationD: "Spa Website : https://jleeintimateescape.netlify.app/",
+
       },
     ];
   
@@ -48,7 +54,9 @@ const MainDetailList = () => {
                 <h1>{detailListInfoObjects.heading}</h1>
                 <div>{detailListInfoObjects.informationA}</div>
                 <div>{detailListInfoObjects.informationB}</div>
-                <div onClick = {handleClickVisitProject1} className ="Project1" >{detailListInfoObjects.informationC} </div>
+                <div onClick = {handleClickVisitProject1} className ="ProjectLinks" >{detailListInfoObjects.informationC} </div>
+                <div onClick = {handleClickVisitProject2} className ="ProjectLinks" >{detailListInfoObjects.informationC} </div>
+
                 
               </div>
               <hr />
