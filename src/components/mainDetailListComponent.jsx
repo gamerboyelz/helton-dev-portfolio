@@ -10,6 +10,9 @@ const MainDetailList = () => {
       const handleClickVisitProject2 = ()=>{
         window.open('https://jleeintimateescape.netlify.app/')
     }
+    const handleClickVisitProject3 = ()=>{
+        window.open('https://scriptspeak.netlify.app/')
+    }
     
 //arrray of objects for display
 
@@ -40,8 +43,8 @@ const MainDetailList = () => {
         informationA: "A list of links will be posted with my live projects",
         informationB: "Please visit my git hub profile with the links provided in the footer or header of this website",
         informationC: "Memory Notes App : https://memorynotes.netlify.app/",
-        informationD: "Spa Website : https://jleeintimateescape.netlify.app/"
-
+        informationD: "Spa Website : https://jleeintimateescape.netlify.app/",
+        informationE: "ScriptSpeak : https://scriptspeak.netlify.app/"
       },
     ];
   
@@ -56,6 +59,8 @@ const MainDetailList = () => {
                 <div>{detailListInfoObjects.informationB}</div>
                 <div onClick = {handleClickVisitProject1} className ="ProjectLinks" >{detailListInfoObjects.informationC} </div>
                 <div onClick = {handleClickVisitProject2} className ="ProjectLinks" >{detailListInfoObjects.informationD} </div>
+                <div onClick = {handleClickVisitProject3} className ="ProjectLinks" >{detailListInfoObjects.informationE} </div>
+
 
                 
               </div>
