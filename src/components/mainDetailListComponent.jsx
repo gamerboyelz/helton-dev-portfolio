@@ -40,7 +40,7 @@ const MainDetailList = () => {
         informationA: "A list of links will be posted with my live projects",
         informationB: "Please visit my git hub profile with the links provided in the footer or header of this website",
         informationC: "Memory Notes App : https://memorynotes.netlify.app/",
-        informationD: "Spa Website : https://jleeintimateescape.netlify.app/",
+        informationD: "Spa Website : https://jleeintimateescape.netlify.app/"
 
       },
     ];
@@ -55,7 +55,7 @@ const MainDetailList = () => {
                 <div>{detailListInfoObjects.informationA}</div>
                 <div>{detailListInfoObjects.informationB}</div>
                 <div onClick = {handleClickVisitProject1} className ="ProjectLinks" >{detailListInfoObjects.informationC} </div>
-                <div onClick = {handleClickVisitProject2} className ="ProjectLinks" >{detailListInfoObjects.informationC} </div>
+                <div onClick = {handleClickVisitProject2} className ="ProjectLinks" >{detailListInfoObjects.informationD} </div>
 
                 
               </div>
