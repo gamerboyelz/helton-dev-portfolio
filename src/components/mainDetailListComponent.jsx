@@ -33,7 +33,7 @@ const MainDetailList = () => {
       {
         id: 3,
         heading:'Skills',
-        informationA: "JavaScript, HTML, CSS, REACT, Node.js, SQL  ",
+        informationA: "C#, ASP.NET (MVC), JavaScript, HTML, CSS, REACT, Node.js, SQL, Git ",
         informationB: skillsIconComponent() /* The component could also be placed here like this --> <SkillsIconComponent />*/
       },
 

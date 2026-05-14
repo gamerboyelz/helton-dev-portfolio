@@ -6,6 +6,8 @@ import { IoLogoSass } from "react-icons/io5";
 import { RiReactjsFill } from "react-icons/ri";
 import { FaCss3Alt } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { DiDotnet } from "react-icons/di";
+import { DiGit } from "react-icons/di";
 
 const SkillsIconComponent = ()=>{
     
@@ -19,6 +21,10 @@ const SkillsIconComponent = ()=>{
             <div className="devIcons"><RiReactjsFill  /></div>
             <div className="devIcons"><DiNodejsSmall  /></div>
             <div className="devIcons"><GrMysql /></div>
+            <div className="devIcons"><DiDotnet /></div>
+            <div className="devIcons"><DiGit /></div>
+
+
         </div>
         </IconContext.Provider>
     )
